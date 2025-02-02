@@ -110,7 +110,7 @@ Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 1. Pada halaman `index.php`, cari data yang ingin diedit.
 2. Klik tombol ✏️**Edit**, sistem akan membuka:
    ```
-   http://localhost/playstation/update.php?id=41
+   http://localhost/PLAYSTATION/pelanggan/update.php?id=41
    ```
 3. Ubah data yang diperlukan dan klik 💾**Simpan**.
 4. Jika berhasil, data akan diperbarui.
