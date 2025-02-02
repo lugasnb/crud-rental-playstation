@@ -29,7 +29,7 @@ Sebelum menjalankan sistem ini, pastikan sudah memiliki:
 ---
 
 ## 🛠 **2. Konfigurasi Koneksi Database**
-Jika terjadi error koneksi, pastikan file `connect.php` diubah sesuai dengan pengaturan database lokal:
+Pastikan file `connect.php` diubah sesuai dengan pengaturan database lokal:
 
 ```php
 <?php
@@ -56,7 +56,7 @@ if ($conn->connect_error) {
    ```
    http://localhost/playstation/index.php
    ```
-3. Sekarang kamu bisa mulai menggunakan CRUD PlayStation!
+3. Sekarang kamu bisa mulai menggunakan CRUD Pelanggan!
 
 ---
 
