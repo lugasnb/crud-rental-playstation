@@ -1,0 +1,24 @@
+body {
+  background-color: #ffffff; /* Light gray background */
+}
+
+/* Card styling */
+.card {
+  width: 100%;
+  max-width: 380px;
+  min-height: 480px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth hover effect */
+  border-radius: 12px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+}
+
+/* Hover effect on card */
+.card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card-body {
+  padding: 3rem; /* Adjust padding inside the card */
+}

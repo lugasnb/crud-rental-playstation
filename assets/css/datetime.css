@@ -1,0 +1,68 @@
+body {
+  background: #f0f2f5; /* Latar belakang abu-abu terang */
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efek hover untuk kartu */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#time-card {
+  max-width: 350px; /* Memperkecil ukuran kartu */
+  text-align: center;
+  /*padding: 20px; /* Menambah padding dalam kartu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan lebih halus */
+}
+
+#time {
+  font-size: 2rem; /* Ukuran font lebih kecil dari sebelumnya */
+  font-weight: bold;
+  color: #2d3436;
+  margin-bottom: 10px; /* Memberikan jarak antara waktu dan tanggal */
+}
+
+#date {
+  font-size: 1rem; /* Ukuran font sedikit lebih kecil */
+  color: #636e72;
+  margin-top: 5px; /* Memberikan jarak sedikit antara waktu dan tanggal */
+}
+
+/* Flexbox untuk menata kartu dalam satu baris */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Memberikan jarak antar kartu */
+}
+
+.col-md-3 {
+  flex: 1 1 22%; /* Menyusun kolom menjadi 4 kolom dalam satu baris */
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
