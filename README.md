@@ -5,14 +5,7 @@ Dengan fitur CRUD (Create, Read, Update, Delete), admin dapat menambah, melihat,
 
 ---
 
-## 🚀 **1. Instalasi dan Persiapan**
-### **1.1. Persyaratan**
-Sebelum menjalankan sistem ini, pastikan sudah memiliki:
-- **XAMPP/LAMP/WAMP** → Untuk menjalankan PHP dan MySQL
-- **Browser** → Chrome, Firefox, atau Edge
-- **Code Editor** (Opsional) → Visual Studio Code atau Sublime Text
-
-### **1.2. Konfigurasi Database**
+## 🚀 **1. Konfigurasi Database**
 1. **Buka phpMyAdmin** di browser:
    ```
    http://localhost/phpmyadmin/
@@ -23,13 +16,13 @@ Sebelum menjalankan sistem ini, pastikan sudah memiliki:
    ```
 3. **Import database**:
    - Masuk ke tab **Import**
-   - Pilih file `database/db_playstation.sql`
+   - Pilih file `db_playstation.sql`
    - Klik **Go** untuk mengunggah database
 
 ---
 
 ## 🛠 **2. Konfigurasi Koneksi Database**
-Pastikan file `connect.php` diubah sesuai dengan pengaturan database lokal:
+Jika terjadi error koneksi, pastikan file `connect.php` diubah sesuai dengan pengaturan database lokal:
 
 ```php
 <?php
@@ -50,13 +43,24 @@ if ($conn->connect_error) {
 
 ---
 
-## 🏁 **3. Menjalankan Sistem**
-1. Pastikan **Apache dan MySQL** aktif di XAMPP/LAMP.
-2. Jalankan sistem dengan membuka browser dan akses:
+## 🔐 **3. Sistem Login**
+Sebelum mengakses fitur CRUD, pengguna harus login terlebih dahulu.
+
+1. **Buka halaman login**:
    ```
-   http://localhost/playstation/index.php
+   http://localhost/playstation/login.php
    ```
-3. Sekarang kamu bisa mulai menggunakan CRUD Pelanggan!
+2. **Masukkan kredensial**:
+   - **Username**: admin
+   - **Password**: 12345
+3. Jika berhasil, pengguna akan diarahkan ke halaman dashboard.
+
+### **👤 Logout**
+1. Untuk keluar dari sistem, klik tombol logout atau akses:
+   ```
+   http://localhost/pelanggan/logout.php
+   ```
+2. Pengguna akan dikembalikan ke halaman login.
 
 ---
 
@@ -79,7 +83,7 @@ Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 ### **📌 5.1. Melihat Daftar Pelanggan (Read)**
 1. **Buka browser** dan akses:
    ```
-   http://localhost/pelanggan/index.php
+   http://localhost/pelanggan/
    ```
 2. Akan muncul daftar Pelanggan yang ada di dalam database.
 3. Setiap data memiliki tombol ✏️**Edit** dan 🗑️**Hapus**.
@@ -120,8 +124,18 @@ Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 
 ---
 
-## 📌 **6. Kesimpulan**
-Sistem ini memungkinkan admin untuk **menambah, melihat, mengedit, dan menghapus** data PlayStation dengan mudah. Pastikan semua langkah diikuti agar sistem berjalan dengan baik.
+## 🏁 **6. Menjalankan Sistem**
+1. Pastikan **Apache dan MySQL** aktif di XAMPP/LAMP.
+2. Jalankan sistem dengan membuka browser dan akses:
+   ```
+   http://localhost/pelanggan/index.php
+   ```
+3. Sekarang kamu bisa mulai menggunakan sistem rental Pelanggan!
+
+---
+
+## 📌 **7. Kesimpulan**
+Sistem ini memungkinkan admin untuk **login, menambah, melihat, mengedit, dan menghapus** data Pelanggan dengan mudah. Pastikan semua langkah diikuti agar sistem berjalan dengan baik.
 
 Jika ada pertanyaan atau error, silakan periksa konfigurasi database dan koneksi.
 
