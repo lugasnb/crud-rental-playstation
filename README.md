@@ -7,7 +7,7 @@ Dengan fitur CRUD (Create, Read, Update, Delete), admin dapat menambah, melihat,
 
 ## 🚀 **1. Instalasi dan Persiapan**
 ### **1.1. Persyaratan**
-Sebelum menjalankan sistem ini, pastikan kamu sudah memiliki:
+Sebelum menjalankan sistem ini, pastikan sudah memiliki:
 - **XAMPP/LAMP/WAMP** → Untuk menjalankan PHP dan MySQL
 - **Browser** → Chrome, Firefox, atau Edge
 - **Code Editor** (Opsional) → Visual Studio Code atau Sublime Text
@@ -28,60 +28,62 @@ Sebelum menjalankan sistem ini, pastikan kamu sudah memiliki:
 
 ---
 
-## 📂 **2. Struktur Folder CRUD PlayStation**
-Semua fitur CRUD PlayStation berada dalam folder `/playstation`:
+## 📂 **2. Struktur Folder CRUD Pelanggan**
+Semua fitur CRUD Pelanggan berada dalam folder `/pelanggan`:
 
 ```
-/playstation
-  ├── create.php  --> Menambah data PlayStation
-  ├── delete.php  --> Menghapus data PlayStation
-  ├── index.php   --> Menampilkan daftar PlayStation
-  └── update.php  --> Mengedit data PlayStation
+/pelanggan
+  ├── create.php  --> Menambah data Pelanggan
+  ├── delete.php  --> Menghapus data Pelanggan
+  ├── index.php   --> Menampilkan daftar Pelanggan
+  └── update.php  --> Mengedit data Pelanggan
 ```
 
 ---
 
-## 📝 **3. Cara Menggunakan CRUD PlayStation**
+## 📝 **3. Cara Menggunakan CRUD Pelanggan**
 Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 
-### **📌 3.1. Melihat Daftar PlayStation (Read)**
+### **📌 3.1. Melihat Daftar Pelanggan (Read)**
 1. **Buka browser** dan akses:
    ```
-   http://localhost/playstation/index.php
+   http://localhost/pelanggan/index.php
    ```
-2. Akan muncul daftar PlayStation yang ada di dalam database.
-3. Setiap data memiliki tombol **Edit** dan **Hapus**.
+2. Akan muncul daftar Pelanggan yang ada di dalam database.
+3. Setiap data memiliki tombol ✏️**Edit** dan 🗑️**Hapus**.
 
 ---
 
-### **➕ 3.2. Menambah Data PlayStation (Create)**
+### **➕ 3.2. Menambah Data Pelanggan (Create)**
 1. Buka halaman:
    ```
-   http://localhost/playstation/create.php
+   http://localhost/pelanggan/create.php
    ```
-2. Isi form dengan informasi PlayStation:
-   - **Nama PlayStation**: PS5
-   - **Tipe**: Digital
-   - **Harga Sewa**: 50.000
-3. Klik tombol **Tambah**.
-4. Jika berhasil, data akan muncul di daftar PlayStation.
+2. Isi form dengan informasi Pelanggan:
+   - **Kode Pelanggan**: PLG022
+   - **Nama**: Budi
+   - **Jenis Kelamin**: Laki-laki (Pilih Antara Laki-laki atau Perempuan)
+   - **Alamat**: Jl. Manggis No.9, Jakarta
+   - **Telepon**: 081234567900
+3. Klik tombol 💾**Simpan**.
+4. Jika berhasil, data akan muncul di daftar Pelanggan.
 
 ---
 
-### **✏ 3.3. Mengedit Data PlayStation (Update)**
+### **✏ 3.3. Mengedit Data Pelanggan (Update)**
 1. Pada halaman `index.php`, cari data yang ingin diedit.
-2. Klik tombol **Edit**, sistem akan membuka:
+2. Klik tombol ✏️**Edit**, sistem akan membuka:
    ```
-   http://localhost/playstation/update.php?id=1
+   http://localhost/playstation/update.php?id=41
    ```
-3. Ubah data yang diperlukan dan klik **Simpan**.
+3. Ubah data yang diperlukan dan klik 💾**Simpan**.
 4. Jika berhasil, data akan diperbarui.
 
 ---
 
-### **🗑 3.4. Menghapus Data PlayStation (Delete)**
+### **🗑 3.4. Menghapus Data Pelanggan (Delete)**
 1. Pada halaman `index.php`, cari data yang ingin dihapus.
-2. Klik tombol **Hapus**, lalu sistem akan meminta konfirmasi.
+2. Klik tombol 🗑️**Hapus**, lalu sistem akan meminta konfirmasi.
 3. Jika dikonfirmasi, data akan terhapus dari database.
 
 ---
@@ -91,13 +93,15 @@ Jika terjadi error koneksi, pastikan file `connect.php` diubah sesuai dengan pen
 
 ```php
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "db_playstation";
+$servername = "localhost";
+$username = "root";             // nama user
+$password = "";                 // password
+$dbname = "db_playstation";     // nama database
 
-$conn = new mysqli($host, $user, $pass, $db);
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
 
+// Memeriksa koneksi
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
