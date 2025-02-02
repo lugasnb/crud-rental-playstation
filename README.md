@@ -48,7 +48,7 @@ Sebelum mengakses fitur CRUD, pengguna harus login terlebih dahulu.
 
 1. **Buka halaman login**:
    ```
-   http://localhost/playstation/login.php
+   http://localhost/PLAYSTATION/
    ```
 2. **Masukkan kredensial**:
    - **Username**: admin
@@ -58,7 +58,7 @@ Sebelum mengakses fitur CRUD, pengguna harus login terlebih dahulu.
 ### **👤 Logout**
 1. Untuk keluar dari sistem, klik tombol logout atau akses:
    ```
-   http://localhost/pelanggan/logout.php
+   http://localhost/PLAYSTATION/logout.php
    ```
 2. Pengguna akan dikembalikan ke halaman login.
 
@@ -83,7 +83,7 @@ Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 ### **📌 5.1. Melihat Daftar Pelanggan (Read)**
 1. **Buka browser** dan akses:
    ```
-   http://localhost/pelanggan/
+   http://localhost/PLAYSTATION/pelanggan/
    ```
 2. Akan muncul daftar Pelanggan yang ada di dalam database.
 3. Setiap data memiliki tombol ✏️**Edit** dan 🗑️**Hapus**.
@@ -93,7 +93,7 @@ Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 ### **➕ 5.2. Menambah Data Pelanggan (Create)**
 1. Buka halaman:
    ```
-   http://localhost/pelanggan/create.php
+   http://localhost/PLAYSTATION/pelanggan/create.php
    ```
 2. Isi form dengan informasi Pelanggan:
    - **Kode Pelanggan**: PLG022
@@ -128,7 +128,7 @@ Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
 1. Pastikan **Apache dan MySQL** aktif di XAMPP/LAMP.
 2. Jalankan sistem dengan membuka browser dan akses:
    ```
-   http://localhost/pelanggan/index.php
+   http://localhost/PLAYSTATION/
    ```
 3. Sekarang kamu bisa mulai menggunakan sistem rental Pelanggan!
 
