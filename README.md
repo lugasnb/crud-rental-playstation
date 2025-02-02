@@ -28,67 +28,7 @@ Sebelum menjalankan sistem ini, pastikan sudah memiliki:
 
 ---
 
-## 📂 **2. Struktur Folder CRUD Pelanggan**
-Semua fitur CRUD Pelanggan berada dalam folder `/pelanggan`:
-
-```
-/pelanggan
-  ├── create.php  --> Menambah data Pelanggan
-  ├── delete.php  --> Menghapus data Pelanggan
-  ├── index.php   --> Menampilkan daftar Pelanggan
-  └── update.php  --> Mengedit data Pelanggan
-```
-
----
-
-## 📝 **3. Cara Menggunakan CRUD Pelanggan**
-Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
-
-### **📌 3.1. Melihat Daftar Pelanggan (Read)**
-1. **Buka browser** dan akses:
-   ```
-   http://localhost/pelanggan/index.php
-   ```
-2. Akan muncul daftar Pelanggan yang ada di dalam database.
-3. Setiap data memiliki tombol ✏️**Edit** dan 🗑️**Hapus**.
-
----
-
-### **➕ 3.2. Menambah Data Pelanggan (Create)**
-1. Buka halaman:
-   ```
-   http://localhost/pelanggan/create.php
-   ```
-2. Isi form dengan informasi Pelanggan:
-   - **Kode Pelanggan**: PLG022
-   - **Nama**: Budi
-   - **Jenis Kelamin**: Laki-laki (Pilih Antara Laki-laki atau Perempuan)
-   - **Alamat**: Jl. Manggis No.9, Jakarta
-   - **Telepon**: 081234567900
-3. Klik tombol 💾**Simpan**.
-4. Jika berhasil, data akan muncul di daftar Pelanggan.
-
----
-
-### **✏ 3.3. Mengedit Data Pelanggan (Update)**
-1. Pada halaman `index.php`, cari data yang ingin diedit.
-2. Klik tombol ✏️**Edit**, sistem akan membuka:
-   ```
-   http://localhost/playstation/update.php?id=41
-   ```
-3. Ubah data yang diperlukan dan klik 💾**Simpan**.
-4. Jika berhasil, data akan diperbarui.
-
----
-
-### **🗑 3.4. Menghapus Data Pelanggan (Delete)**
-1. Pada halaman `index.php`, cari data yang ingin dihapus.
-2. Klik tombol 🗑️**Hapus**, lalu sistem akan meminta konfirmasi.
-3. Jika dikonfirmasi, data akan terhapus dari database.
-
----
-
-## 🛠 **4. Konfigurasi Koneksi Database**
+## 🛠 **2. Konfigurasi Koneksi Database**
 Jika terjadi error koneksi, pastikan file `connect.php` diubah sesuai dengan pengaturan database lokal:
 
 ```php
@@ -110,13 +50,73 @@ if ($conn->connect_error) {
 
 ---
 
-## 🏁 **5. Menjalankan Sistem**
+## 🏁 **3. Menjalankan Sistem**
 1. Pastikan **Apache dan MySQL** aktif di XAMPP/LAMP.
 2. Jalankan sistem dengan membuka browser dan akses:
    ```
    http://localhost/playstation/index.php
    ```
 3. Sekarang kamu bisa mulai menggunakan CRUD PlayStation!
+
+---
+
+## 📂 **4. Struktur Folder CRUD Pelanggan**
+Semua fitur CRUD Pelanggan berada dalam folder `/pelanggan`:
+
+```
+/pelanggan
+  ├── create.php  --> Menambah data Pelanggan
+  ├── delete.php  --> Menghapus data Pelanggan
+  ├── index.php   --> Menampilkan daftar Pelanggan
+  └── update.php  --> Mengedit data Pelanggan
+```
+
+---
+
+## 📝 **5. Cara Menggunakan CRUD Pelanggan**
+Setelah database terhubung, kamu bisa langsung menggunakan fitur CRUD berikut:
+
+### **📌 5.1. Melihat Daftar Pelanggan (Read)**
+1. **Buka browser** dan akses:
+   ```
+   http://localhost/pelanggan/index.php
+   ```
+2. Akan muncul daftar Pelanggan yang ada di dalam database.
+3. Setiap data memiliki tombol ✏️**Edit** dan 🗑️**Hapus**.
+
+---
+
+### **➕ 5.2. Menambah Data Pelanggan (Create)**
+1. Buka halaman:
+   ```
+   http://localhost/pelanggan/create.php
+   ```
+2. Isi form dengan informasi Pelanggan:
+   - **Kode Pelanggan**: PLG022
+   - **Nama**: Budi
+   - **Jenis Kelamin**: Laki-laki (Pilih Antara Laki-laki atau Perempuan)
+   - **Alamat**: Jl. Manggis No.9, Jakarta
+   - **Telepon**: 081234567900
+3. Klik tombol 💾**Simpan**.
+4. Jika berhasil, data akan muncul di daftar Pelanggan.
+
+---
+
+### **✏ 5.3. Mengedit Data Pelanggan (Update)**
+1. Pada halaman `index.php`, cari data yang ingin diedit.
+2. Klik tombol ✏️**Edit**, sistem akan membuka:
+   ```
+   http://localhost/playstation/update.php?id=41
+   ```
+3. Ubah data yang diperlukan dan klik 💾**Simpan**.
+4. Jika berhasil, data akan diperbarui.
+
+---
+
+### **🗑 5.4. Menghapus Data Pelanggan (Delete)**
+1. Pada halaman `index.php`, cari data yang ingin dihapus.
+2. Klik tombol 🗑️**Hapus**, lalu sistem akan meminta konfirmasi.
+3. Jika dikonfirmasi, data akan terhapus dari database.
 
 ---
 
