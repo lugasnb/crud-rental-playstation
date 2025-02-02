@@ -1,10 +1,8 @@
 # 🎮 PlayStation Rental System
 
-Berikut adalah penjelasan yang lebih rapi dan mudah dipahami untuk sistem manajemen rental PlayStation berbasis web:
 
----
+Sebuah **Sistem Manajemen Rental PlayStation** berbasis web yang dikembangkan sebagai tugas besar mata kuliah **Basis Data**. Sistem ini mendukung fitur **CRUD** (Create, Read, Update, Delete) untuk mengelola data PlayStation, Pelanggan, Rental dan transaksi penyewaan. Dibangun menggunakan **PHP**, **MySQL**, dan **Bootstrap**, serta berjalan di **XAMPP/LAMP** sebagai server lokal.  
 
-**Sistem Manajemen Rental PlayStation** adalah aplikasi berbasis web yang digunakan untuk mengelola data rental PlayStation, pelanggan, transaksi penyewaan, dan lainnya. Sistem ini dibangun menggunakan **PHP**, **MySQL**, dan **Bootstrap**, dan berjalan di server lokal menggunakan **XAMPP** atau **LAMP**.
 
 ### Cara Menggunakan Sistem:
 1. **Jalankan Apache dan MySQL**
