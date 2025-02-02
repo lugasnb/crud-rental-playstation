@@ -7,7 +7,7 @@ Sebuah sistem manajemen Rental PlayStation berbasis web yang dikembangkan sebaga
 ✅ Login & Logout System  
 ✅ Manajemen Data PlayStation  
 ✅ CRUD Data Pelanggan  
-✅ Print Invoice Pembayaran
+✅ Print Invoice Pembayaran  
 ✅ Koneksi Database dengan MySQL  
 ✅ Desain Responsif dengan Bootstrap  
 
