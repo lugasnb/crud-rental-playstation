@@ -14,7 +14,7 @@ Sebuah **Sistem Manajemen Rental PlayStation** berbasis web yang dikembangkan se
    http://localhost/PLAYSTATION/
    ```
 
-5. **Login**, Sebelum mengakses fitur-fitur sistem, diperlu login terlebih dahulu untuk menjaga keamanan dan membatasi akses. Untuk login:
+5. **Login**, Sebelum mengakses fitur-fitur sistem, diperlukan login terlebih dahulu untuk menjaga keamanan dan membatasi akses. Untuk login:
 
    - **Username**: admin
 
